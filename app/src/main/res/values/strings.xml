@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Kwft Bank</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="acctype">Account Type</string>
+    <string name="welcome">Welcome to Kwft Bank. Select the Service You Need</string>
+    <string name="confirmCash">Kindly confirm you want to send KES</string>
+    <string name="mpesaNo">mpesa for</string>
+    <string-array name="accounttype">
+        <item>Current Account</item>
+        <item>Fixed Account</item>
+        <item>Savings Account</item>
+    </string-array>
+</resources>

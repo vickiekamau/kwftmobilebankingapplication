@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/statement">
+
+        <TextView
+            android:id="@+id/val_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/val_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/15/2000"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/val_id"/>
+        <TextView
+            android:id="@+id/val_originator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1010101010"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/val_date"/>
+        <TextView
+            android:id="@+id/val_Destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0721622368"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/val_originator"/>
+        <TextView
+            android:id="@+id/val_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="5000.00"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/val_Destination"/>
+    </RelativeLayout>
+

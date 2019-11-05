@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Withdraw.Withdraw">
+
+
+    <RelativeLayout
+        android:background="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ic_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/kwftlogo"
+            android:layout_marginLeft="110dp"/>
+
+        <ImageView
+            android:id="@+id/ic_mobilePayments"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/mobilepayments"
+            android:padding="1dp"
+            android:layout_below="@id/ic_logo"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/txt_mobile_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Mobile Money"
+            android:layout_below="@+id/ic_mobilePayments"
+            android:layout_marginLeft="35dp"/>
+        <ImageView
+            android:id="@+id/ic_myAccounts"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/myaccount"
+            android:padding="1dp"
+            android:layout_below="@+id/ic_logo"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/ic_mobilePayments"/>
+        <TextView
+            android:id="@+id/txt_myAccounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="My Accounts"
+            android:layout_below="@+id/ic_mobilePayments"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/txt_mobile_money"/>
+        <ImageView
+            android:id="@+id/ic_otherAccounts"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/otheraccounts"
+            android:padding="1dp"
+            android:layout_below="@+id/ic_logo"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/ic_myAccounts"/>
+        <TextView
+            android:id="@+id/txt_otherAccounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Other Accounts"
+            android:layout_below="@+id/ic_mobilePayments"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/txt_myAccounts"/>
+        <ImageView
+            android:id="@+id/ic_otherBanks"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/otherbanks"
+            android:padding="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txt_mobile_money"
+            android:layout_marginLeft="40dp"/>
+        <TextView
+            android:id="@+id/txt_otherBanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Other Banks"
+            android:layout_below="@+id/ic_otherBanks"
+            android:layout_marginLeft="40dp"/>
+        <ImageView
+            android:id="@+id/ic_buyAirtime"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/buyairtime"
+            android:padding="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txt_myAccounts"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/ic_otherBanks"/>
+        <TextView
+            android:id="@+id/txt_buyAirtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Buy Airtime"
+            android:layout_below="@+id/ic_buyAirtime"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/txt_otherBanks"/>
+        <ImageView
+            android:id="@+id/ic_payBill"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/paybill"
+            android:padding="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txt_myAccounts"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/ic_buyAirtime"/>
+        <TextView
+            android:id="@+id/txt_payBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Pay Bill"
+            android:layout_below="@+id/ic_buyAirtime"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@+id/txt_buyAirtime"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

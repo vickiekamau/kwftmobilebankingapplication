@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    tools:context=".activity.Confirm_Mpesa_Details.MobileMoney">
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/myNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEND TO MY NUMBER"
+            android:textColor="@color/green"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/otherNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="SEND TO OTHER NUMBER"
+            android:textColor="@color/darkgrey"
+            android:layout_toRightOf="@+id/myNo"
+            android:layout_marginTop="20dp"
+            android:textSize="13sp"/>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="130dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/myNo"
+            android:background="@color/green"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <View
+            android:layout_width="200dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/otherNo"
+            android:background="@color/darkgrey"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/line1"
+            android:layout_marginLeft="2dp"/>
+
+
+        <ImageView
+            android:id="@+id/mpesa"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/mpesa"/>
+        <TextView
+            android:id="@+id/txt_Mpesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mpesa"
+            android:layout_below="@id/line1"
+            android:text="MPESA"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/txt_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mpesa"
+            android:layout_below="@+id/txt_Mpesa"
+            android:text="Debit account"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/txt_accountNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_account"
+            android:layout_below="@+id/txt_Mpesa"
+            android:textColor="@color/blackColor"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/txt_Currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_account"
+            android:layout_toRightOf="@+id/mpesa"
+            android:layout_marginLeft="10dp"
+            android:text="Currency: KES"
+            android:textColor="@color/blackColor"/>
+        <View
+            android:id="@+id/line3"
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_Currency"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/mpesa"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line3"
+            android:text="Mobile"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/phoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/mobile"
+            android:layout_below="@id/line3"
+            android:textColor="@color/blackColor"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/transparent"/>
+        <View
+            android:id="@+id/line4"
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/mobile"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/txt_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line4"
+            android:text="Amount"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textSize="17sp"/>
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_amount"
+            android:layout_below="@id/line4"
+            android:hint="Enter Amount"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:inputType="numberDecimal"
+            android:background="@android:color/transparent"/>
+        <View
+            android:id="@+id/line5"
+            android:layout_width="330dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/amount"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/bt_sendMoney"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/line4"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/bt_mpesa_background"
+            android:text="Send Money"
+            android:textColor="@color/whiteColor"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
